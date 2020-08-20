@@ -4,7 +4,7 @@ const fs = require('fs')
 const uuid = require('uuid')
 
 // GET all notes
-router.get('/notes', (req, res) => {
+router.get('/api/notes', (req, res) => {
   fs.readFile(join(__dirname, '..', 'db', 'db.json'), 'utf8', (err, data) => {
     if (err) { console.log(err) }
     res.json(JSON.parse(data))
@@ -12,7 +12,7 @@ router.get('/notes', (req, res) => {
 })
 
 // POST one note
-router.post('/notes', (req, res) => {
+router.post('/api/notes', (req, res) => {
 
   fs.readFile(join(__dirname, '..', 'db', 'db.json'), 'utf8', (err, data) => {
     if (err) { console.log(err) }
@@ -34,7 +34,7 @@ router.post('/notes', (req, res) => {
 })
 
 // DELETE one note
-router.delete('/notes/:id', (req, res) => {
+router.delete('/api/notes/:id', (req, res) => {
 
   fs.readFile(join(__dirname, '..', 'db', 'db.json'), 'utf8', (err, data) => {
     if (err) { console.log(err) }
