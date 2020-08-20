@@ -1,1 +1,30 @@
 []
+
+// CREATE DATABASE test_db;
+// USE test_db;
+// CREATE TABLE users (
+//     name VARCHAR(25) NOT NULL,
+//     age TINYINT NOT NULL,
+//     birthday DATE NOT NULL,
+//     email VARCHAR(50) NOT NULL
+// );
+// USE test_db;
+// INSERT INTO users (name, age, birthday, email)
+// VALUES ('Jane Doe', 45, '1980-12-12', 'janedoe@gmail.com'),
+// ('Jack Doe', 45, '1980-12-12', 'jackdoe@gmail.com');
+// USE test_db;
+// SELECT * FROM users
+// WHERE name = 'John Doe';
+
+// USE test_db;
+
+// UPDATE users
+// SET age = 46
+// WHERE name = 'John Doe';
+
+// USE test_db;
+
+// DELETE FROM users
+// WHERE name = 'Jack Doe';
+
+

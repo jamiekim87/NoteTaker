@@ -19,7 +19,6 @@ router.post('/notes', (req, res) => {
 
     let notes = JSON.parse(data)
     let note = {
-      title: req.body.title, 
       id: uuid.v1(),
       text: req.body.text,
       isDone: req.body.isDone
@@ -35,7 +34,7 @@ router.post('/notes', (req, res) => {
 })
 
 // DELETE one note
-router.delete('api/notes/:id', (req, res) => {
+router.delete('/notes/:id', (req, res) => {
 
   fs.readFile(join(__dirname, '..', 'db', 'db.json'), 'utf8', (err, data) => {
     if (err) { console.log(err) }
