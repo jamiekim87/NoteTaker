@@ -19,9 +19,9 @@ router.post('/notes', (req, res) => {
 
     let notes = JSON.parse(data)
     let note = {
+      title: req.body.title,
       id: uuid.v1(),
-      text: req.body.text,
-      isDone: req.body.isDone
+      text: req.body.text
     }
     notes.push(note)
 
